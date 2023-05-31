@@ -18,9 +18,4 @@ def login():
 @pytest.fixture()
 def text1():
     return 'Сдесь могла бы быть ваша реклама)'
-
-
-@pytest.fixture()
-def text2():
-    return 'Тестируем при помощи requests и pytest'
     
