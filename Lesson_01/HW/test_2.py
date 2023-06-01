@@ -22,9 +22,9 @@ def findpost(token):
     return postdescript
 
 
-def test_2(login, text1):
+def test_step2(login, text1):
     assert text1 in get(login)
 
 
-def test_3(login, text2):
+def test_step3(login, text2):
     assert text2 in findpost(login)    

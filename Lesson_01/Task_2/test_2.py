@@ -9,5 +9,5 @@ def get(token):
     return listcont
 
 
-def test_2(login, text1):
+def test_step2(login, text1):
     assert text1 in get(login)
