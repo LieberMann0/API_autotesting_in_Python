@@ -3,8 +3,8 @@ from selenium.webdriver.support.wait import WebDriverWait
 
 class BasePage:
 
-    def __init__(self, address, driver):
-        self.address = address
+    def __init__(self, driver):
+        self.address = 'https://test-stand.gb.ru'
         self.driver = driver
         
     

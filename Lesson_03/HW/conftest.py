@@ -10,14 +10,6 @@ with open('testdata.yaml') as f:
     browser = testdata['browser']
 name = testdata['username']
 
-@pytest.fixture()
-def expected_result_1():
-    return "401"
-
-@pytest.fixture()
-def expected_result_2():
-    return "Hello, {}".format(name)
-
 @pytest.fixture(scope='session')
 def browser():
     if browser == "firefox":
@@ -30,3 +22,20 @@ def browser():
         driver = webdriver.Chrome(service=service, options=options)
     yield driver
     driver.quit()
+
+@pytest.fixture()
+def expected_result_1():
+    return "401"
+
+@pytest.fixture()
+def expected_result_2():
+    return "Hello, {}".format(name)
+
+@pytest.fixture()
+def open_form():
+    return "Contact us!"
+
+
+@pytest.fixture()
+def alert_text():
+    return "Form successfully submitted"
