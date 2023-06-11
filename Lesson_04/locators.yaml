@@ -1,0 +1,22 @@
+xpath:
+  x_selector1: //*[@id="login"]/div[1]/label/input
+
+  x_selector2: //*[@id="login"]/div[2]/label/input
+
+  x_selector3: //*[@id="app"]/main/div/div/div[2]/h2
+
+  x_selector4: //*[@id="app"]/main/nav/ul/li[3]/a
+
+  name_field: //*[@id="contact"]/div[1]/label/input
+
+  email_field: //*[@id="contact"]/div[2]/label/input
+
+  content_field: //*[@id="contact"]/div[3]/label/span/textarea
+
+  contact_us_btn: //*[@id="contact"]/div[4]/button
+
+
+css:
+  btn_selector: button
+  contact_btn: li:nth-child(2) > a
+  
