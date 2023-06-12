@@ -24,7 +24,7 @@ def get_notmy_posts(token):
         logging.error('Страница с постами не открылась')
 
 
-def createpost(token):
+def test_createpost(token):
     logging.debug('Create new post')
     p = requests.post('https://test-stand.gb.ru/gateway/posts', headers={'X-Auth-Token': token},
                       data={'title': 'Новый пост для тестирования',
@@ -37,7 +37,7 @@ def createpost(token):
         logging.error('Пост не создан')
 
 
-def findpost(token):
+def test_findpost(token):
     logging.debug('Find created post')
     d = requests.get('https://test-stand.gb.ru/api/posts', headers={'X-Auth-Token': token})
     if d:

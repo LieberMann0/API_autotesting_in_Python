@@ -27,8 +27,9 @@ def test_step2(hello_user, browser, alert_text):
     page.enter_good_login()
     page.enter_good_pass()
     page.click_login_button()
+    
     # SendMail()
-    assert page.get_hello_user() == hello_user
+    
     page.click_contact_button()
     time.sleep(3)
     page.enter_name()
@@ -37,5 +38,5 @@ def test_step2(hello_user, browser, alert_text):
     time.sleep(3)
     page.click_contact_us_button()
     time.sleep(3)
-    assert page.alert() == alert_text
+    assert page.alert() == alert_text and page.get_hello_user() == hello_user
     
