@@ -82,7 +82,5 @@ class Operations(BasePage):
             return True
         else:
             logging.error('Error. site dont return code')
-            return False
-
-    
+            return False    
     
