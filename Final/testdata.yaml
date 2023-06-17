@@ -1,0 +1,7 @@
+url: "https://test-stand.gb.ru/gateway/login"
+users: "https://test-stand.gb.ru/api/users"
+username: 10061
+password: 7fe3d16a83
+id: 1022
+sleep_time: 5
+chk_cmd: 'nikto -h https://test-stand.gb.ru/ -ssl -Tuning 4'
